@@ -6,17 +6,17 @@ export default class VocabTestQuestion extends Component {
 
   state = {
     answerValue: null
-  }
+  };
 
   onSubmit = () => {
     this.props.onSubmit(this.state.answerValue);
     this.setState({answerValue: null});
-  }
+  };
 
   onPass = () => {
     this.props.onSubmit(null);
     this.setState({answerValue: null});
-  }
+  };
 
   render() {
     return (

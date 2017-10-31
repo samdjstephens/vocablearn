@@ -15,7 +15,7 @@ export default class VocabTest extends Component {
       qLang: qLang,
       ansLang: ansLang
     }
-  }
+  };
 
   state = this.getClearState();
 
@@ -25,23 +25,23 @@ export default class VocabTest extends Component {
     qData.ans = ans;
     questions[currentQuestion] = qData;
     this.setState({questions: questions, currentQuestion: currentQuestion + 1});
-  }
+  };
 
   getCurrentQuestionData = () => {
     const {questions, currentQuestion} = this.state;
     return currentQuestion < questions.length ? questions[currentQuestion] : null;
-  }
+  };
 
   isAnswerCorrect = (qData) => {
     const correctAns = qData[this.state.ansLang];
     return qData.ans !== null && qData.ans.toLowerCase().trim() === correctAns ? 1 : 0;
-  }
+  };
 
   numCorrectAnswers = () => {
     return this.state.questions
       .map(this.isAnswerCorrect)
       .reduce((a, b) => (a + b));
-  }
+  };
 
   render() {
     const qData = this.getCurrentQuestionData();
