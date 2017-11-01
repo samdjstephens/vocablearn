@@ -9,7 +9,7 @@ export default class VocabTestResults extends Component {
     return (
       <Text style={styles.wrongAnswerText} key={ix}>LTU: {ltu} ENG: {eng} You: {answer}</Text>
     );
-  }
+  };
 
   render() {
     let wrongAnswers = this.props.wrongAnswers.map(this.createWrongAnsRows);
@@ -26,9 +26,9 @@ export default class VocabTestResults extends Component {
         </View>
 
         <View style={styles.finaliseContainer}>
-          <TouchableOpacity style={{flex: 1}} onPress={() => this.props.onTakeAnotherTest()}>
+          <TouchableOpacity style={{flex: 1}} onPress={() => this.props.onComplete()}>
             <View style={styles.finaliseButton}>
-              <Text style={styles.finaliseButtonText}>Take another test</Text>
+              <Text style={styles.finaliseButtonText}>Return to Menu</Text>
             </View>
           </TouchableOpacity>
         </View>

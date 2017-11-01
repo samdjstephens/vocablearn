@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { AppRegistry, View, Text, StyleSheet } from 'react-native'
-import VocabTest from './src/components/vocabTest'
+import VocabLearn from './src/components/vocabLearn'
 
-export default class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
-      <VocabTest />
+      <VocabLearn />
     );
   }
 }

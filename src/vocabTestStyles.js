@@ -25,6 +25,11 @@ export default styles = StyleSheet.create({
   answerContainer: {
     justifyContent: 'space-between'
   },
+  categoryMenuContainer: {
+    flexDirection: 'column',
+    backgroundColor: 'skyblue',
+    height: 300,
+  },
   finaliseContainer: {
     height: 70,
     backgroundColor: 'skyblue',

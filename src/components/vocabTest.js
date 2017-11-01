@@ -1,23 +1,21 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
 import VocabTestQuestion from './vocabTestQuestion'
 import VocabTestResults from './vocabTestResults'
-import words from '../words'
 import _ from 'lodash'
 
 export default class VocabTest extends Component {
 
-  getClearState = () => {
-    const [qLang, ansLang] = _.shuffle(["eng", "ltu"]);
-    return {
-      questions: _.sampleSize(words, 10),
-      currentQuestion: 0,
-      qLang: qLang,
-      ansLang: ansLang
-    }
-  };
 
-  state = this.getClearState();
+  constructor(props) {
+    super(props);
+    const [qLang, ansLang] = _.shuffle(["eng", "ltu"]);
+    this.state = {
+      currentQuestion: 0,
+      qLang,
+      ansLang,
+      questions: _.sampleSize(props.words, 10),
+    }
+  }
 
   updateCurrentQuestion = (ans) => {
     let qData = this.getCurrentQuestionData();
@@ -55,7 +53,7 @@ export default class VocabTest extends Component {
       component = (<VocabTestResults
                       numCorrect={this.numCorrectAnswers()}
                       wrongAnswers={this.state.questions.filter(q => !this.isAnswerCorrect(q))}
-                      onTakeAnotherTest={() => this.setState(this.getClearState())}
+                      onComplete={() => this.props.onComplete()}
                    />);
     }
     return component;
