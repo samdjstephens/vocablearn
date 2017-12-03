@@ -26,9 +26,8 @@ export default styles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   categoryMenuContainer: {
-    flexDirection: 'column',
     backgroundColor: 'skyblue',
-    height: 300,
+    flex: 1,
   },
   finaliseContainer: {
     height: 70,

@@ -1,67 +1,232 @@
 export default words = [
   {
-    name: "Greetings",
-    words: [
+    "name": "About town",
+    "words": [
       {
         "ans": null,
-        "ltu": "pasisveikinimas",
-        "eng": "greetings"
+        "ltu": "miestas",
+        "eng": "town"
+      }, 
+      {
+        "ans": null,
+        "ltu": "vietos",
+        "eng": "places"
       },
       {
         "ans": null,
-        "ltu": "labas rytas",
-        "eng": "good morning"
+        "ltu": "pastatas",
+        "eng": "building"
       },
       {
         "ans": null,
-        "ltu": "laba diena",
-        "eng": "good day"
+        "ltu": "namas",
+        "eng": "house"
       },
       {
         "ans": null,
-        "ltu": "labas vakaras",
-        "eng": "good evening"
+        "ltu": "gatvė",
+        "eng": "street"
       },
       {
         "ans": null,
-        "ltu": "labanakt",
-        "eng": "good night"
+        "ltu": "miesto centras",
+        "eng": "town centre"
       },
       {
         "ans": null,
-        "ltu": "ate",
-        "eng": "bye"
+        "ltu": "baras",
+        "eng": "pub"
       },
       {
         "ans": null,
-        "ltu": "viso gero",
-        "eng": "goodbye"
+        "ltu": "restoranas",
+        "eng": "restaurant"
       },
       {
         "ans": null,
-        "ltu": "prašau",
-        "eng": "please"
+        "ltu": "bažnyčia",
+        "eng": "church"
       },
       {
         "ans": null,
-        "ltu": "koks tavo vardas?",
-        "eng": "what is your name?"
+        "ltu": "parduotuvė",
+        "eng": "shop"
       },
       {
         "ans": null,
-        "ltu": "kaip tau sekasi?",
-        "eng": "how are you?"
+        "ltu": "mašina",
+        "eng": "car"
       },
       {
         "ans": null,
-        "ltu": "ačiū",
-        "eng": "thank you"
+        "ltu": "autobusas",
+        "eng": "bus"
       },
+      {
+        "ans": null,
+        "ltu": "lėktuvas",
+        "eng": "plane"
+      },
+      {
+        "ans": null,
+        "ltu": "troleibusas",
+        "eng": "trolleybus"
+      },
+      {
+        "ans": null,
+        "ltu": "stotis",
+        "eng": "station"
+      }
     ]
   },
   {
-    name: "Verbs",
-    words: [
+    "name": "Adjectives",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "gražu",
+        "eng": "nice"
+      },
+      {
+        "ans": null,
+        "ltu": "didelis",
+        "eng": "big"
+      },
+      {
+        "ans": null,
+        "ltu": "mažas",
+        "eng": "small"
+      },
+      {
+        "ans": null,
+        "ltu": "nauja",
+        "eng": "new"
+      },
+      {
+        "ans": null,
+        "ltu": "senas",
+        "eng": "old"
+      },
+      {
+        "ans": null,
+        "ltu": "aukštai",
+        "eng": "high"
+      },
+      {
+        "ans": null,
+        "ltu": "žemai",
+        "eng": "low"
+      },
+      {
+        "ans": null,
+        "ltu": "svarbu",
+        "eng": "important"
+      },
+      {
+        "ans": null,
+        "ltu": "anksti",
+        "eng": "early"
+      },
+      {
+        "ans": null,
+        "ltu": "vėlu",
+        "eng": "late"
+      },
+      {
+        "ans": null,
+        "ltu": "lengva",
+        "eng": "easy"
+      },
+      {
+        "ans": null,
+        "ltu": "sunku",
+        "eng": "hard"
+      },
+      {
+        "ans": null,
+        "ltu": "blogas",
+        "eng": "bad"
+      },
+      {
+        "ans": null,
+        "ltu": "gera",
+        "eng": "good"
+      },
+      {
+        "ans": null,
+        "ltu": "neblogai",
+        "eng": "ok"
+      },
+      {
+        "ans": null,
+        "ltu": "jaunas",
+        "eng": "young"
+      },
+      {
+        "ans": null,
+        "ltu": "laimingas",
+        "eng": "happy"
+      },
+      {
+        "ans": null,
+        "ltu": "liūdnas",
+        "eng": "sad"
+      },
+      {
+        "ans": null,
+        "ltu": "skanu",
+        "eng": "tasty"
+      }
+    ]
+  },
+  {
+    "name": "Colours",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "spalva",
+        "eng": "colour"
+      },
+      {
+        "ans": null,
+        "ltu": "mėlyna",
+        "eng": "blue"
+      },
+      {
+        "ans": null,
+        "ltu": "geltona",
+        "eng": "yellow"
+      },
+      {
+        "ans": null,
+        "ltu": "žalia",
+        "eng": "green"
+      },
+      {
+        "ans": null,
+        "ltu": "raudona",
+        "eng": "red"
+      },
+      {
+        "ans": null,
+        "ltu": "oranžinė",
+        "eng": "orange"
+      },
+      {
+        "ans": null,
+        "ltu": "tamsu",
+        "eng": "dark"
+      },
+      {
+        "ans": null,
+        "ltu": "šviesu",
+        "eng": "light"
+      }
+    ]
+  },
+  {
+    "name": "Common verbs",
+    "words": [
       {
         "ans": null,
         "ltu": "mėgti",
@@ -74,89 +239,44 @@ export default words = [
       },
       {
         "ans": null,
+        "ltu": "kalbėti",
+        "eng": "to speak"
+      },
+      {
+        "ans": null,
+        "ltu": "man patinka",
+        "eng": "i like"
+      },
+      {
+        "ans": null,
+        "ltu": "skaityti",
+        "eng": "to read"
+      },
+      {
+        "ans": null,
         "ltu": "rašyti",
         "eng": "to write"
       },
-    ]
-  },
-  {
-    name: "House and furniture",
-    words: [
       {
         "ans": null,
-        "ltu": "kambarys",
-        "eng": "room"
+        "ltu": "man nepatinka",
+        "eng": "i don't like"
       },
       {
         "ans": null,
-        "ltu": "virtuvė",
-        "eng": "kitchen"
+        "ltu": "aš noriu",
+        "eng": "i want"
       },
       {
         "ans": null,
-        "ltu": "vonia",
-        "eng": "bathroom"
-      },
-      {
-        "ans": null,
-        "ltu": "tualetas",
-        "eng": "toilet"
-      },
-      {
-        "ans": null,
-        "ltu": "svetainė",
-        "eng": "living room"
-      },
-      {
-        "ans": null,
-        "ltu": "miegamasis",
-        "eng": "bedroom"
-      },
-      {
-        "ans": null,
-        "ltu": "baldai",
-        "eng": "furniture"
-      },
-      {
-        "ans": null,
-        "ltu": "stalas",
-        "eng": "table"
-      },
-      {
-        "ans": null,
-        "ltu": "kėdė",
-        "eng": "chair"
-      },
-      {
-        "ans": null,
-        "ltu": "viryklė",
-        "eng": "oven"
-      },
-      {
-        "ans": null,
-        "ltu": "kriauklė",
-        "eng": "sink"
-      },
-      {
-        "ans": null,
-        "ltu": "televizorius",
-        "eng": "tv"
-      },
-      {
-        "ans": null,
-        "ltu": "lova",
-        "eng": "bed"
-      },
-      {
-        "ans": null,
-        "ltu": "sofa",
-        "eng": "sofa"
+        "ltu": "man reikia",
+        "eng": "i need"
       }
     ]
   },
   {
-    name: "Date and time",
-    words: [
+    "name": "Date and time",
+    "words": [
       {
         "ans": null,
         "ltu": "laikas",
@@ -311,95 +431,167 @@ export default words = [
         "ans": null,
         "ltu": "gruodis",
         "eng": "december"
-      },
+      }
     ]
   },
   {
-    name: "Other",
-    words: [
+    "name": "Food and drink",
+    "words": [
       {
         "ans": null,
-        "ltu": "čia",
-        "eng": "here"
+        "ltu": "arbata",
+        "eng": "tea"
       },
       {
         "ans": null,
-        "ltu": "taip",
-        "eng": "yes"
-      },
-
-      {
-        "ans": null,
-        "ltu": "irgi",
-        "eng": "too"
+        "ltu": "kava",
+        "eng": "coffee"
       },
       {
         "ans": null,
-        "ltu": "draugas",
-        "eng": "friend"
+        "ltu": "obuolys",
+        "eng": "apple"
       },
       {
         "ans": null,
-        "ltu": "studentė",
-        "eng": "student"
+        "ltu": "obuolių pyragas",
+        "eng": "apple pie"
+      }
+    ]
+  },
+  {
+    "name": "Furniture",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "baldai",
+        "eng": "furniture"
       },
       {
         "ans": null,
-        "ltu": "skaityti",
-        "eng": "to read"
-      },
-
-      {
-        "ans": null,
-        "ltu": "kur",
-        "eng": "where"
+        "ltu": "stalas",
+        "eng": "table"
       },
       {
         "ans": null,
-        "ltu": "taip pat",
-        "eng": "also"
+        "ltu": "kėdė",
+        "eng": "chair"
       },
       {
         "ans": null,
-        "ltu": "šeima",
-        "eng": "family"
+        "ltu": "viryklė",
+        "eng": "hob"
       },
       {
         "ans": null,
-        "ltu": "miestas",
-        "eng": "town"
+        "ltu": "orkaitė",
+        "eng": "oven"
       },
       {
         "ans": null,
-        "ltu": "kambarys",
-        "eng": "room"
+        "ltu": "kriauklė",
+        "eng": "sink"
       },
       {
         "ans": null,
-        "ltu": "brolis",
-        "eng": "brother"
+        "ltu": "televizorius",
+        "eng": "tv"
       },
       {
         "ans": null,
-        "ltu": "sesė",
-        "eng": "sister"
+        "ltu": "lova",
+        "eng": "bed"
       },
       {
         "ans": null,
-        "ltu": "stotis",
-        "eng": "station"
+        "ltu": "sofa",
+        "eng": "sofa"
       },
       {
         "ans": null,
-        "ltu": "kalbėti",
-        "eng": "to speak"
+        "ltu": "durys",
+        "eng": "door"
       },
       {
         "ans": null,
-        "ltu": "žinoma",
-        "eng": "of course"
+        "ltu": "spintelė",
+        "eng": "cupboard"
       },
-
+      {
+        "ans": null,
+        "ltu": "langas",
+        "eng": "window"
+      },
+      {
+        "ans": null,
+        "ltu": "knygų spinta",
+        "eng": "bookcase"
+      },
+      {
+        "ans": null,
+        "ltu": "laiptai",
+        "eng": "stairs"
+      },
+      {
+        "ans": null,
+        "ltu": "šaldytuvas",
+        "eng": "fridge"
+      },
+      {
+        "ans": null,
+        "ltu": "šaldiklis",
+        "eng": "freezer"
+      }
+    ]
+  },
+  {
+    "name": "Greetings",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "ačiū",
+        "eng": "thank you"
+      },
+      {
+        "ans": null,
+        "ltu": "pasisveikinimas",
+        "eng": "greetings"
+      },
+      {
+        "ans": null,
+        "ltu": "labas rytas",
+        "eng": "good morning"
+      },
+      {
+        "ans": null,
+        "ltu": "laba diena",
+        "eng": "good day"
+      },
+      {
+        "ans": null,
+        "ltu": "labas vakaras",
+        "eng": "good evening"
+      },
+      {
+        "ans": null,
+        "ltu": "labanakt",
+        "eng": "good night"
+      },
+      {
+        "ans": null,
+        "ltu": "ate",
+        "eng": "bye"
+      },
+      {
+        "ans": null,
+        "ltu": "viso gero",
+        "eng": "goodbye"
+      },
+      {
+        "ans": null,
+        "ltu": "prašau",
+        "eng": "please"
+      },
       {
         "ans": null,
         "ltu": "vardas",
@@ -407,18 +599,13 @@ export default words = [
       },
       {
         "ans": null,
-        "ltu": "gerai",
-        "eng": "good"
+        "ltu": "koks tavo vardas?",
+        "eng": "what is your name?"
       },
       {
         "ans": null,
-        "ltu": "blogai",
-        "eng": "bad"
-      },
-      {
-        "ans": null,
-        "ltu": "neblogai",
-        "eng": "ok"
+        "ltu": "kaip tau sekasi?",
+        "eng": "how are you?"
       },
       {
         "ans": null,
@@ -452,6 +639,101 @@ export default words = [
       },
       {
         "ans": null,
+        "ltu": "smagu pasimatyti",
+        "eng": "nice to see you"
+      },
+      {
+        "ans": null,
+        "ltu": "prašau",
+        "eng": "please "
+      }
+    ]
+  },
+  {
+    "name": "House verbs",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "plauti ",
+        "eng": "to wash"
+      },
+      {
+        "ans": null,
+        "ltu": "valyti ",
+        "eng": "to clean"
+      },
+      {
+        "ans": null,
+        "ltu": "gaminti",
+        "eng": "to cook"
+      },
+      {
+        "ans": null,
+        "ltu": "virti",
+        "eng": "to boil"
+      },
+      {
+        "ans": null,
+        "ltu": "valgyti",
+        "eng": "to eat "
+      },
+      {
+        "ans": null,
+        "ltu": "gerti ",
+        "eng": "to drink"
+      },
+      {
+        "ans": null,
+        "ltu": "miegoti",
+        "eng": "to sleep "
+      },
+      {
+        "ans": null,
+        "ltu": "keltis ",
+        "eng": "to get up "
+      },
+      {
+        "ans": null,
+        "ltu": "praustis ",
+        "eng": "to shower "
+      },
+      {
+        "ans": null,
+        "ltu": "žiūrėti ",
+        "eng": "to watch "
+      }
+    ]
+  },
+  {
+    "name": "In a shop",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "kiek kainuoja?",
+        "eng": "how much is this?"
+      },
+      {
+        "ans": null,
+        "ltu": "galima saskaita? ",
+        "eng": "can i get the bill? "
+      },
+      {
+        "ans": null,
+        "ltu": "norėčiau atsiskaityti",
+        "eng": "i would like to pay please"
+      },
+      {
+        "ans": null,
+        "ltu": "dar viena",
+        "eng": "one more "
+      }
+    ]
+  },
+  {
+    "name": "Meals",
+    "words": [
+      {
+        "ans": null,
         "ltu": "ar tu alkanas?",
         "eng": "are you hungry?"
       },
@@ -459,51 +741,6 @@ export default words = [
         "ans": null,
         "ltu": "nori valgyt?",
         "eng": "would you like to eat?"
-      },
-      {
-        "ans": null,
-        "ltu": "man patinka",
-        "eng": "i like"
-      },
-      {
-        "ans": null,
-        "ltu": "man nepatinka",
-        "eng": "i don't like"
-      },
-      {
-        "ans": null,
-        "ltu": "smagu pasimatyti",
-        "eng": "nice to see you"
-      },
-      {
-        "ans": null,
-        "ltu": "aš noriu",
-        "eng": "i want"
-      },
-      {
-        "ans": null,
-        "ltu": "man reikia",
-        "eng": "i need"
-      },
-      {
-        "ans": null,
-        "ltu": "arbata",
-        "eng": "tea"
-      },
-      {
-        "ans": null,
-        "ltu": "kava",
-        "eng": "coffee"
-      },
-      {
-        "ans": null,
-        "ltu": "obuolys",
-        "eng": "apple"
-      },
-      {
-        "ans": null,
-        "ltu": "obuolių pyragas",
-        "eng": "apple pie"
       },
       {
         "ans": null,
@@ -564,6 +801,51 @@ export default words = [
         "ans": null,
         "ltu": "dubenėlis",
         "eng": "bowl"
+      }
+    ]
+  },
+  {
+    "name": "Other",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "čia",
+        "eng": "here"
+      },
+      {
+        "ans": null,
+        "ltu": "kur",
+        "eng": "where"
+      },
+      {
+        "ans": null,
+        "ltu": "taip",
+        "eng": "yes"
+      },
+      {
+        "ans": null,
+        "ltu": "irgi",
+        "eng": "too"
+      },
+      {
+        "ans": null,
+        "ltu": "taip pat",
+        "eng": "also"
+      },
+      {
+        "ans": null,
+        "ltu": "žinoma",
+        "eng": "of course"
+      }
+    ]
+  },
+  {
+    "name": "People and family",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "studentė",
+        "eng": "student"
       },
       {
         "ans": null,
@@ -637,109 +919,179 @@ export default words = [
       },
       {
         "ans": null,
-        "ltu": "spalva",
-        "eng": "colour"
+        "ltu": "šeima",
+        "eng": "family"
       },
       {
         "ans": null,
-        "ltu": "mėlyna",
-        "eng": "blue"
+        "ltu": "draugas",
+        "eng": "friend"
+      }
+    ]
+  },
+  {
+    "name": "Pronouns",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "kas",
+        "eng": "who"
       },
       {
         "ans": null,
-        "ltu": "geltona",
-        "eng": "yellow"
+        "ltu": "kas nors",
+        "eng": "someone"
       },
       {
         "ans": null,
-        "ltu": "žalia",
-        "eng": "green"
+        "ltu": "visi",
+        "eng": "everyone"
       },
       {
         "ans": null,
-        "ltu": "raudona",
-        "eng": "red"
+        "ltu": "niekas",
+        "eng": "noone"
       },
       {
         "ans": null,
-        "ltu": "oranžinė",
-        "eng": "orange"
+        "ltu": "bet kas",
+        "eng": "anyone"
       },
       {
         "ans": null,
-        "ltu": "tamsu",
-        "eng": "dark"
+        "ltu": "kažkas",
+        "eng": "something"
       },
       {
         "ans": null,
-        "ltu": "šviesu",
-        "eng": "light"
+        "ltu": "viskas",
+        "eng": "everything"
       },
       {
         "ans": null,
-        "ltu": "vietos",
-        "eng": "places"
+        "ltu": "niekas",
+        "eng": "nothing"
       },
       {
         "ans": null,
-        "ltu": "pastatas",
-        "eng": "building"
+        "ltu": "nieko",
+        "eng": "nothing"
       },
       {
         "ans": null,
-        "ltu": "namas",
-        "eng": "house"
+        "ltu": "bet kas",
+        "eng": "anything"
       },
       {
         "ans": null,
-        "ltu": "gatvė",
-        "eng": "street"
+        "ltu": "kelios",
+        "eng": "few"
       },
       {
         "ans": null,
-        "ltu": "miesto centras",
-        "eng": "town centre"
+        "ltu": "keli",
+        "eng": "few"
       },
       {
         "ans": null,
-        "ltu": "baras",
-        "eng": "pub"
+        "ltu": "pora",
+        "eng": "couple"
       },
       {
         "ans": null,
-        "ltu": "restoranas",
-        "eng": "restaurant"
+        "ltu": "abi",
+        "eng": "both"
       },
       {
         "ans": null,
-        "ltu": "bažnyčia",
-        "eng": "church"
+        "ltu": "abu",
+        "eng": "both"
       },
       {
         "ans": null,
-        "ltu": "parduotuvė",
-        "eng": "shop"
+        "ltu": "visos",
+        "eng": "all"
       },
       {
         "ans": null,
-        "ltu": "mašina",
-        "eng": "car"
+        "ltu": "visi",
+        "eng": "all"
       },
       {
         "ans": null,
-        "ltu": "autobusas",
-        "eng": "bus"
+        "ltu": "bet kuri",
+        "eng": "either"
       },
       {
         "ans": null,
-        "ltu": "lėktuvas",
-        "eng": "plane"
+        "ltu": "bet kuris",
+        "eng": "either"
       },
       {
         "ans": null,
-        "ltu": "troleibusas",
-        "eng": "trolleybus"
+        "ltu": "kekviena",
+        "eng": "each"
       },
+      {
+        "ans": null,
+        "ltu": "kekvienas",
+        "eng": "each"
+      },
+      {
+        "ans": null,
+        "ltu": "nei viena",
+        "eng": "neither"
+      },
+      {
+        "ans": null,
+        "ltu": "nei vienas",
+        "eng": "neither"
+      }
+    ]
+  },
+  {
+    "name": "Rooms",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "kambarys",
+        "eng": "room"
+      },
+      {
+        "ans": null,
+        "ltu": "virtuvė",
+        "eng": "kitchen"
+      },
+      {
+        "ans": null,
+        "ltu": "vonia",
+        "eng": "bathroom"
+      },
+      {
+        "ans": null,
+        "ltu": "tualetas",
+        "eng": "toilet"
+      },
+      {
+        "ans": null,
+        "ltu": "svetainė",
+        "eng": "living room"
+      },
+      {
+        "ans": null,
+        "ltu": "miegamasis",
+        "eng": "bedroom"
+      },
+      {
+        "ans": null,
+        "ltu": "sodas",
+        "eng": "garden"
+      }
+    ]
+  },
+  {
+    "name": "Weather",
+    "words": [
       {
         "ans": null,
         "ltu": "temperatūra",
@@ -759,6 +1111,41 @@ export default words = [
         "ans": null,
         "ltu": "šilta",
         "eng": "warm"
+      },
+      {
+        "ans": null,
+        "ltu": "oras",
+        "eng": "weather"
+      },
+      {
+        "ans": null,
+        "ltu": "lija",
+        "eng": "raining"
+      },
+      {
+        "ans": null,
+        "ltu": "saulėta",
+        "eng": "sunny"
+      },
+      {
+        "ans": null,
+        "ltu": "apsiniaukę",
+        "eng": "gloomy"
+      },
+      {
+        "ans": null,
+        "ltu": "sninga",
+        "eng": "snowing"
+      },
+      {
+        "ans": null,
+        "ltu": "vėjuota",
+        "eng": "windy"
+      },
+      {
+        "ans": null,
+        "ltu": "audringa",
+        "eng": "stormy"
       }
     ]
   }
