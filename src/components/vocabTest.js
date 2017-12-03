@@ -8,7 +8,7 @@ export default class VocabTest extends Component {
 
   constructor(props) {
     super(props);
-    const [qLang, ansLang] = _.shuffle(["eng", "ltu"]);
+    const [qLang, ansLang] = props.questionLanguage === 'ltu' ? ['ltu', 'eng'] : ['eng', 'ltu'];
     this.state = {
       currentQuestion: 0,
       qLang,

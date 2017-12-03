@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { AppRegistry, View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import styles from '../vocabTestStyles'
+import DirectionPicker from "./directionPicker";
 
 export default class VocabCategoryMenu extends Component {
   render() {
@@ -17,6 +18,14 @@ export default class VocabCategoryMenu extends Component {
         </TouchableOpacity>
       )
     });
-    return <View style={styles.categoryMenuContainer}>{buttonList}</View>
+    return (
+      <View style={styles.categoryMenuContainer}>
+        {buttonList}
+        <DirectionPicker
+          onSelect={(lang) => this.props.onQuestionLanguageSelect(lang)}
+          questionLanguage={this.props.questionLanguage}
+        />
+      </View>
+    );
   }
 }
