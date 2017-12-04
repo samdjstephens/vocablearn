@@ -1,4 +1,6 @@
 {
+  "name": "vocablearn",
+  "displayName": "VocabLearn",
   "expo": {
     "sdkVersion": "22.0.0"
   }
