@@ -1,18 +1,40 @@
 import React, { Component } from 'react'
-import { View, Text, TouchableOpacity} from 'react-native'
+import {View, Text, TouchableOpacity, FlatList} from 'react-native'
 import styles from '../vocabTestStyles'
+import LabelWordRow from "./wordListView";
 
 export default class VocabTestResults extends Component {
 
-  createWrongAnsRows = ({eng, ltu, ans}, ix) => {
-    let answer = ans === null ? "Passed" : ans;
+  createWrongAnsRows = ({item}) => {
+    console.log(item);
+    const answer = item.ans === null ? "Passed" : item.ans;
     return (
-      <Text style={styles.wrongAnswerText} key={ix}>LTU: {ltu} ENG: {eng} You: {answer}</Text>
+      <View>
+        <LabelWordRow
+          keyIx={1}
+          label={'Lithuanian'}
+          word={item.ltu}
+        />
+        <LabelWordRow
+          keyIx={2}
+          label={'English'}
+          word={item.eng}
+        />
+        <LabelWordRow
+          keyIx={3}
+          label={'You'}
+          word={answer}
+        />
+      </View>
     );
   };
 
+  renderSeparator = () => (
+    <View style={{backgroundColor: 'white', height: 2}} />
+  );
+
   render() {
-    let wrongAnswers = this.props.wrongAnswers.map(this.createWrongAnsRows);
+    // const wrongAnswers = this.props.wrongAnswers.map(this.createWrongAnsRows);
     return (
       <View style={styles.container}>
 
@@ -22,7 +44,11 @@ export default class VocabTestResults extends Component {
 
         <View style={styles.answerContainer}>
           <Text style={styles.questionText}>Wrong answers:</Text>
-          {wrongAnswers}
+          <FlatList
+            data={this.props.wrongAnswers}
+            renderItem={this.createWrongAnsRows}
+            ItemSeparatorComponent={this.renderSeparator}
+          />
         </View>
 
         <View style={styles.finaliseContainer}>

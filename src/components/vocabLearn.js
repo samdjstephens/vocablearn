@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { AppRegistry, View, Text, StyleSheet } from 'react-native'
+import React from 'react'
+import { View } from 'react-native'
 import VocabTest from './vocabTest'
 import VocabCategoryMenu from './vocabCategoryMenu'
 import words from '../words'
@@ -48,12 +48,3 @@ export default class VocabLearn extends React.Component {
     this.setState(this.getBaseState())
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
