@@ -9,17 +9,47 @@ Components
  */
 
 
-export default LabelWordRow = (props) => (
+const WordPairRow = (props) => {
+  const userAnswerRowProps = {
+    keyIx: 3,
+    label: 'You',
+    word: props.ans === null ? "Passed" : props.ans,
+    // TODO: BGColour green for correct, red for incorrect
+  };
+  return (
+    <View style={{ paddingVertical: 5 }}>
+      <LabelWordRow
+        keyIx={1}
+        label={'LTU'}
+        word={props.ltu}
+      />
+      <LabelWordRow
+        keyIx={2}
+        label={'ENG'}
+        word={props.eng}
+      />
+      {
+        props.showUserAnswer ? <LabelWordRow {...userAnswerRowProps} /> : null
+      }
+    </View>
+  );
+};
+
+
+const LabelWordRow = (props) => (
   <View style={{flex: 1, flexDirection: 'row'}} key={props.keyIx} >
-    <View style={{flex: 1, backgroundColor: 'steelblue'}}>
-      <Text>
+    <View style={{flex: 1, justifyContent: 'center', flexDirection: 'row', backgroundColor: 'skyblue'}}>
+      <Text style={{fontSize: 18}}>
         {props.label}
       </Text>
     </View>
     <View style={{flex: 4, paddingLeft: 5}}>
-      <Text>
+      <Text style={{fontSize: 18}}>
         {props.word}
       </Text>
     </View>
   </View>
 );
+
+
+export default WordPairRow;

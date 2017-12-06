@@ -1,32 +1,13 @@
 import React, { Component } from 'react'
 import {View, Text, TouchableOpacity, FlatList} from 'react-native'
 import styles from '../vocabTestStyles'
-import LabelWordRow from "./wordListView";
+import WordPairRow from "./wordListView";
 
 export default class VocabTestResults extends Component {
 
   createWrongAnsRows = ({item}) => {
     console.log(item);
-    const answer = item.ans === null ? "Passed" : item.ans;
-    return (
-      <View>
-        <LabelWordRow
-          keyIx={1}
-          label={'Lithuanian'}
-          word={item.ltu}
-        />
-        <LabelWordRow
-          keyIx={2}
-          label={'English'}
-          word={item.eng}
-        />
-        <LabelWordRow
-          keyIx={3}
-          label={'You'}
-          word={answer}
-        />
-      </View>
-    );
+    return <WordPairRow showUserAnswer={true} {...item} />
   };
 
   renderSeparator = () => (
