@@ -36,6 +36,18 @@ export default class VocabCategoryMenu extends Component {
             }
           />
         </View>
+        <View style={styles.finaliseContainer}>
+          <TouchableOpacity onPress={this.startRevise} style={{flex: 1}}>
+            <View style={styles.sessionTypeButton}>
+              <Text style={styles.sessionTypeButtonText}>Revise</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={this.startTest} style={{flex: 1}}>
+            <View style={styles.sessionTypeButton}>
+              <Text style={styles.sessionTypeButtonText}>Test</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }

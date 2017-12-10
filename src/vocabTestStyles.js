@@ -46,5 +46,15 @@ export default styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     fontSize: 18
-  }
+  },
+  sessionTypeButton: {
+    flex: 1,
+    backgroundColor: 'skyblue',
+    justifyContent: 'center',
+  },
+  sessionTypeButtonText: {
+    color: 'steelblue',
+    textAlign: 'center',
+    fontSize: 18,
+  },
 })
