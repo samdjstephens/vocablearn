@@ -6,7 +6,7 @@ export default words = [
         "ans": null,
         "ltu": "miestas",
         "eng": "town"
-      }, 
+      },
       {
         "ans": null,
         "ltu": "vietos",
@@ -449,13 +449,193 @@ export default words = [
       },
       {
         "ans": null,
-        "ltu": "obuolys",
-        "eng": "apple"
+        "ltu": "vanduo",
+        "eng": "water"
+      },
+      {
+        "ans": null,
+        "ltu": "alus",
+        "eng": "beer"
+      },
+      {
+        "ans": null,
+        "ltu": "vynas",
+        "eng": "wine"
+      },
+      {
+        "ans": null,
+        "ltu": "pienas",
+        "eng": "milk"
+      },
+      {
+        "ans": null,
+        "ltu": "sultys",
+        "eng": "juice"
       },
       {
         "ans": null,
         "ltu": "obuolių pyragas",
         "eng": "apple pie"
+      },
+      {
+        "ans": null,
+        "ltu": "silkė",
+        "eng": "herring"
+      },
+      {
+        "ans": null,
+        "ltu": "kūčiukai",
+        "eng": "bread balls"
+      },
+      {
+        "ans": null,
+        "ltu": "varškė",
+        "eng": "curd"
+      },
+      {
+        "ans": null,
+        "ltu": "duona",
+        "eng": "bread"
+      },
+      {
+        "ans": null,
+        "ltu": "sūris",
+        "eng": "cheese"
+      },
+      {
+        "ans": null,
+        "ltu": "kiaušinis",
+        "eng": "egg"
+      },
+      {
+        "ans": null,
+        "ltu": "sviestas",
+        "eng": "butter"
+      },
+      {
+        "ans": null,
+        "ltu": "cukrus",
+        "eng": "sugar"
+      },
+      {
+        "ans": null,
+        "ltu": "druska",
+        "eng": "salt"
+      },
+      {
+        "ans": null,
+        "ltu": "mėsa",
+        "eng": "meat"
+      },
+      {
+        "ans": null,
+        "ltu": "medus",
+        "eng": "honey"
+      },
+      {
+        "ans": null,
+        "ltu": "kiauliena",
+        "eng": "pork"
+      },
+      {
+        "ans": null,
+        "ltu": "jautiena",
+        "eng": "beef"
+      },
+      {
+        "ans": null,
+        "ltu": "vištiena",
+        "eng": "chicken"
+      },
+      {
+        "ans": null,
+        "ltu": "padažas",
+        "eng": "sauce"
+      },
+      {
+        "ans": null,
+        "ltu": "salotos",
+        "eng": "fresh salad"
+      },
+      {
+        "ans": null,
+        "ltu": "mišrainė",
+        "eng": "salad"
+      },
+      {
+        "ans": null,
+        "ltu": "šokoladas",
+        "eng": "chocolate"
+      },
+      {
+        "ans": null,
+        "ltu": "blynai",
+        "eng": "pancakes"
+      },
+      {
+        "ans": null,
+        "ltu": "žuvis",
+        "eng": "fish"
+      },
+      {
+        "ans": null,
+        "ltu": "uogienė",
+        "eng": "jam"
+      }
+    ]
+  },
+  {
+    "name": "Fruit and vegetables",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "obuolys",
+        "eng": "apple"
+      },
+      {
+        "ans": null,
+        "ltu": "bulvė",
+        "eng": "potato"
+      },
+      {
+        "ans": null,
+        "ltu": "pomidoras",
+        "eng": "tomato"
+      },
+      {
+        "ans": null,
+        "ltu": "agurkas",
+        "eng": "cucumber"
+      },
+      {
+        "ans": null,
+        "ltu": "salota",
+        "eng": "lettuce"
+      },
+      {
+        "ans": null,
+        "ltu": "morka",
+        "eng": "carrot"
+      },
+      {
+        "ans": null,
+        "ltu": "cukinija",
+        "eng": "courgette"
+      },
+      {
+        "ans": null,
+        "ltu": "braškė",
+        "eng": "strawberry"
+      },
+      {
+        "ans": null,
+        "ltu": "slyva",
+        "eng": "plum"
+      },
+      {
+        "ans": null,
+        "ltu": "kriaušė",
+        "eng": "pear"
       }
     ]
   },
@@ -645,7 +825,7 @@ export default words = [
       {
         "ans": null,
         "ltu": "prašau",
-        "eng": "please "
+        "eng": "please"
       }
     ]
   },
@@ -654,13 +834,23 @@ export default words = [
     "words": [
       {
         "ans": null,
-        "ltu": "plauti ",
+        "ltu": "plauti",
         "eng": "to wash"
       },
       {
         "ans": null,
-        "ltu": "valyti ",
+        "ltu": "aš plaunu",
+        "eng": "i wash"
+      },
+      {
+        "ans": null,
+        "ltu": "valyti",
         "eng": "to clean"
+      },
+      {
+        "ans": null,
+        "ltu": "aš valau",
+        "eng": "i clean"
       },
       {
         "ans": null,
@@ -669,38 +859,78 @@ export default words = [
       },
       {
         "ans": null,
+        "ltu": "aš gaminu",
+        "eng": "i cook"
+      },
+      {
+        "ans": null,
         "ltu": "virti",
         "eng": "to boil"
       },
       {
         "ans": null,
-        "ltu": "valgyti",
-        "eng": "to eat "
+        "ltu": "aš verdu",
+        "eng": "i boil"
       },
       {
         "ans": null,
-        "ltu": "gerti ",
+        "ltu": "valgyti",
+        "eng": "to eat"
+      },
+      {
+        "ans": null,
+        "ltu": "aš valgau",
+        "eng": "i eat"
+      },
+      {
+        "ans": null,
+        "ltu": "gerti",
         "eng": "to drink"
       },
       {
         "ans": null,
+        "ltu": "aš geriu",
+        "eng": "i drink"
+      },
+      {
+        "ans": null,
         "ltu": "miegoti",
-        "eng": "to sleep "
+        "eng": "to sleep"
       },
       {
         "ans": null,
-        "ltu": "keltis ",
-        "eng": "to get up "
+        "ltu": "aš miegu",
+        "eng": "i sleep"
       },
       {
         "ans": null,
-        "ltu": "praustis ",
-        "eng": "to shower "
+        "ltu": "keltis",
+        "eng": "to get up"
       },
       {
         "ans": null,
-        "ltu": "žiūrėti ",
-        "eng": "to watch "
+        "ltu": "aš keliuosi",
+        "eng": "i get up"
+      },
+      {
+        "ans": null,
+        "ltu": "praustis",
+        "eng": "to shower"
+      },
+      {
+        "ans": null,
+        "ltu": "aš prausiuosi",
+        "eng": "i shower"
+      },
+      {
+        "ans": null,
+        "ltu": "žiūrėti",
+        "eng": "to watch"
+      },
+      {
+        "ans": null,
+        "ltu": "aš žiūriu",
+        "eng": "i watch"
       }
     ]
   },
@@ -714,8 +944,8 @@ export default words = [
       },
       {
         "ans": null,
-        "ltu": "galima saskaita? ",
-        "eng": "can i get the bill? "
+        "ltu": "galima saskaita?",
+        "eng": "can i get the bill?"
       },
       {
         "ans": null,
@@ -725,7 +955,7 @@ export default words = [
       {
         "ans": null,
         "ltu": "dar viena",
-        "eng": "one more "
+        "eng": "one more"
       }
     ]
   },
@@ -1086,6 +1316,61 @@ export default words = [
         "ans": null,
         "ltu": "sodas",
         "eng": "garden"
+      }
+    ]
+  },
+  {
+    "name": "Special holidays",
+    "words": [
+      {
+        "ans": null,
+        "ltu": "kalėdos",
+        "eng": "christmas"
+      },
+      {
+        "ans": null,
+        "ltu": "kalėdų eglutė",
+        "eng": "christmas tree"
+      },
+      {
+        "ans": null,
+        "ltu": "kūčios",
+        "eng": "christmas eve"
+      },
+      {
+        "ans": null,
+        "ltu": "dovana",
+        "eng": "present"
+      },
+      {
+        "ans": null,
+        "ltu": "nauji matai",
+        "eng": "new years eve"
+      },
+      {
+        "ans": null,
+        "ltu": "fejerverkai",
+        "eng": "fireworks"
+      },
+      {
+        "ans": null,
+        "ltu": "vakarėlis",
+        "eng": "party"
+      },
+      {
+        "ans": null,
+        "ltu": "velykos",
+        "eng": "easter"
+      },
+      {
+        "ans": null,
+        "ltu": "margutis",
+        "eng": "easter egg"
+      },
+      {
+        "ans": null,
+        "ltu": "atvirutė",
+        "eng": "card"
       }
     ]
   },

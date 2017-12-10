@@ -4,7 +4,9 @@ import sys
 
 df = pd.read_csv(sys.argv[1]).loc[:, ['group', 'eng', 'ltu']]
 df['eng'] = df['eng'].str.lower()
+df['eng'] = df['eng'].str.strip()
 df['ltu'] = df['ltu'].str.lower()
+df['ltu'] = df['ltu'].str.strip()
 df['ans'] = None
 out_json = (
     df.groupby('group')[['eng', 'ltu', 'ans']]
