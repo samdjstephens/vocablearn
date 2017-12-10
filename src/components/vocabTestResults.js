@@ -5,29 +5,45 @@ import WordPairRow from "./wordListView";
 
 export default class VocabTestResults extends Component {
 
-  createWrongAnsRows = ({item}) => {
+  createAnsRows = ({item}) => {
     console.log(item);
-    return <WordPairRow showUserAnswer={true} {...item} />
+    return (
+      <WordPairRow
+        showUserAnswer={true}
+        labelColour={item.correct ? '#99d8bc' : '#eaa5a5'}
+        {...item}
+      />
+    );
   };
 
   renderSeparator = () => (
     <View style={{backgroundColor: 'white', height: 2}} />
   );
 
+  numCorrect = () => (
+    this.props.answerData
+      .map(qData => qData.correct)
+      .reduce((acc, next) => acc + next)
+  );
+
+  numQuestions = () => (
+    this.props.answerData.length
+  );
+
   render() {
-    // const wrongAnswers = this.props.wrongAnswers.map(this.createWrongAnsRows);
+    // const wrongAnswers = this.props.wrongAnswers.map(this.createAnsRows);
     return (
       <View style={styles.container}>
 
         <View style={styles.questionContainer}>
-          <Text style={styles.questionText}>Number correct: {this.props.numCorrect}</Text>
+          <Text style={styles.questionText}>Your answers ({`${this.numCorrect()} / ${this.numQuestions()}`})</Text>
         </View>
 
         <View style={styles.answerContainer}>
-          <Text style={styles.questionText}>Wrong answers:</Text>
+          {/*<Text style={styles.questionText}>Wrong answers:</Text>*/}
           <FlatList
-            data={this.props.wrongAnswers}
-            renderItem={this.createWrongAnsRows}
+            data={this.props.answerData}
+            renderItem={this.createAnsRows}
             ItemSeparatorComponent={this.renderSeparator}
           />
         </View>

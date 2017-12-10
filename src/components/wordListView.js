@@ -14,7 +14,7 @@ const WordPairRow = (props) => {
     keyIx: 3,
     label: 'You',
     word: props.ans === null ? "Passed" : props.ans,
-    // TODO: BGColour green for correct, red for incorrect
+    labelColour: props.labelColour,
   };
   return (
     <View style={{ paddingVertical: 5 }}>
@@ -22,11 +22,13 @@ const WordPairRow = (props) => {
         keyIx={1}
         label={'LTU'}
         word={props.ltu}
+        labelColour={props.labelColour}
       />
       <LabelWordRow
         keyIx={2}
         label={'ENG'}
         word={props.eng}
+        labelColour={props.labelColour}
       />
       {
         props.showUserAnswer ? <LabelWordRow {...userAnswerRowProps} /> : null
@@ -38,7 +40,7 @@ const WordPairRow = (props) => {
 
 const LabelWordRow = (props) => (
   <View style={{flex: 1, flexDirection: 'row'}} key={props.keyIx} >
-    <View style={{flex: 1, justifyContent: 'center', flexDirection: 'row', backgroundColor: 'skyblue'}}>
+    <View style={{flex: 1, justifyContent: 'center', flexDirection: 'row', backgroundColor: props.labelColour || 'skyblue'}}>
       <Text style={{fontSize: 18}}>
         {props.label}
       </Text>

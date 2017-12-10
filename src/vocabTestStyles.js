@@ -23,7 +23,8 @@ export default styles = StyleSheet.create({
     textAlign: 'center'
   },
   answerContainer: {
-    justifyContent: 'space-between'
+    justifyContent: 'center',
+    flex: 1,
   },
   categoryMenuContainer: {
     backgroundColor: 'skyblue',

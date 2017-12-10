@@ -31,7 +31,7 @@ export default class VocabTest extends Component {
   };
 
   isAnswerCorrect = (qData) => {
-    const correctAns = qData[this.state.ansLang];
+    const correctAns = qData[this.state.ansLang].toLowerCase().trim();
     return qData.ans !== null && qData.ans.toLowerCase().trim() === correctAns ? 1 : 0;
   };
 
@@ -40,6 +40,13 @@ export default class VocabTest extends Component {
       .map(this.isAnswerCorrect)
       .reduce((a, b) => (a + b));
   };
+
+  makeAnswerData = () => (
+    this.state.questions.map(item => ({
+      ...item,
+      correct: this.isAnswerCorrect(item)
+    }))
+  );
 
   render() {
     const qData = this.getCurrentQuestionData();
@@ -51,8 +58,9 @@ export default class VocabTest extends Component {
                    />);
     } else {
       component = (<VocabTestResults
-                      numCorrect={this.numCorrectAnswers()}
-                      wrongAnswers={this.state.questions.filter(q => !this.isAnswerCorrect(q))}
+                      // numCorrect={this.numCorrectAnswers()}
+                      // wrongAnswers={this.state.questions.filter(q => !this.isAnswerCorrect(q))}
+                      answerData={this.makeAnswerData()}
                       onComplete={() => this.props.onComplete()}
                    />);
     }
