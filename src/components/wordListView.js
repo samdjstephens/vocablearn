@@ -1,12 +1,31 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import {View, Text, FlatList} from 'react-native'
 
-/*
-Components
-- WordPairRow: contains the Lithuanian, English, and "your answer" (optional) info
-- LabelWordRow: contains a label and a word
-- WordListView: list of WordPairRow's
- */
+
+const WordListView = (props) => {
+  const renderSeparator = () => (
+    <View style={{backgroundColor: 'white', height: 2}} />
+  );
+
+  const createAnsRows = ({item}) => {
+    return (
+      <WordPairRow
+        showUserAnswer={item.correct !== undefined}
+        labelColour={item.correct ? '#99d8bc' : '#eaa5a5'}
+        {...item}
+      />
+    );
+  };
+
+  return (
+    <FlatList
+      data={props.wordData}
+      renderItem={createAnsRows}
+      ItemSeparatorComponent={renderSeparator}
+    />
+  );
+};
+
 
 
 const WordPairRow = (props) => {
@@ -54,4 +73,4 @@ const LabelWordRow = (props) => (
 );
 
 
-export default WordPairRow;
+export default WordListView;

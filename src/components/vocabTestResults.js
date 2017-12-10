@@ -1,24 +1,9 @@
 import React, { Component } from 'react'
 import {View, Text, TouchableOpacity, FlatList} from 'react-native'
 import styles from '../vocabTestStyles'
-import WordPairRow from "./wordListView";
+import WordListView from "./wordListView";
 
 export default class VocabTestResults extends Component {
-
-  createAnsRows = ({item}) => {
-    console.log(item);
-    return (
-      <WordPairRow
-        showUserAnswer={true}
-        labelColour={item.correct ? '#99d8bc' : '#eaa5a5'}
-        {...item}
-      />
-    );
-  };
-
-  renderSeparator = () => (
-    <View style={{backgroundColor: 'white', height: 2}} />
-  );
 
   numCorrect = () => (
     this.props.answerData
@@ -31,7 +16,6 @@ export default class VocabTestResults extends Component {
   );
 
   render() {
-    // const wrongAnswers = this.props.wrongAnswers.map(this.createAnsRows);
     return (
       <View style={styles.container}>
 
@@ -40,12 +24,7 @@ export default class VocabTestResults extends Component {
         </View>
 
         <View style={styles.answerContainer}>
-          {/*<Text style={styles.questionText}>Wrong answers:</Text>*/}
-          <FlatList
-            data={this.props.answerData}
-            renderItem={this.createAnsRows}
-            ItemSeparatorComponent={this.renderSeparator}
-          />
+          <WordListView wordData={this.props.answerData} />
         </View>
 
         <View style={styles.finaliseContainer}>
