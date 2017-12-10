@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {AppRegistry, View, Text, StyleSheet, TouchableOpacity, ScrollView} from 'react-native'
 import styles from '../vocabTestStyles'
-import DirectionPicker from "./directionPicker";
+import ToggleButton from './toggleButton';
 
 export default class VocabCategoryMenu extends Component {
   render() {
@@ -24,10 +24,16 @@ export default class VocabCategoryMenu extends Component {
           <ScrollView style={{flex: 1}}>{buttonList}</ScrollView>
         </View>
         <View style={{flex: 2, backgroundColor: 'white'}}>
-          <DirectionPicker
-            style={{flex: 1, padding: 0, margin: 0}}
+          <ToggleButton
+            // style={{flex: 1, padding: 0, margin: 0}}
             onSelect={(lang) => this.props.onQuestionLanguageSelect(lang)}
-            questionLanguage={this.props.questionLanguage}
+            selectedValue={ this.props.questionLanguage }
+            options={
+              [
+                { label: 'Lithuanian', value: 'ltu' },
+                { label: 'English', value: 'eng' }
+              ]
+            }
           />
         </View>
       </View>
