@@ -18,11 +18,11 @@ export default class ToggleButton extends React.Component {
   render() {
     return (
       <TouchableOpacity
-        style={{ }}
+        style={{ padding: 10, margin: 15, backgroundColor: '#7fdbc5', borderRadius: 5 }}
         onPress={this.changeSelection}
       >
         <View>
-          <Text>{this.selectedLabel()}</Text>
+          <Text style={{ fontSize: 18, textAlign: 'center' }}>{this.selectedLabel()}</Text>
         </View>
       </TouchableOpacity>
     );

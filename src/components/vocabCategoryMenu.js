@@ -8,7 +8,7 @@ export default class VocabCategoryMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedIndex: null
+      selectedIndex: 0
     }
   }
 
@@ -34,7 +34,7 @@ export default class VocabCategoryMenu extends Component {
         >
           <View style={{
             flex: 1,
-            backgroundColor: this.state.selectedIndex === index ? 'green' : 'steelblue',
+            backgroundColor: this.state.selectedIndex === index ? '#50c1f7' : 'steelblue',
             justifyContent: 'center'
           }}>
             <Text style={styles.finaliseButtonText}>{name}</Text>
@@ -47,7 +47,12 @@ export default class VocabCategoryMenu extends Component {
         <View style={{flex: 4}}>
           <ScrollView style={{flex: 1}}>{buttonList}</ScrollView>
         </View>
-        <View style={{flex: 2, backgroundColor: 'white'}}>
+        <View style={{
+          flex: 2,
+          backgroundColor: 'white',
+          justifyContent: 'center'
+        }}>
+          <Text style={{ fontSize: 18, margin: 10, textAlign: 'center' }}>Question Language</Text>
           <ToggleButton
             // style={{flex: 1, padding: 0, margin: 0}}
             onSelect={(lang) => this.props.onQuestionLanguageSelect(lang)}
