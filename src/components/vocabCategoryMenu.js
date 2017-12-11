@@ -4,15 +4,39 @@ import styles from '../vocabTestStyles'
 import ToggleButton from './toggleButton';
 
 export default class VocabCategoryMenu extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedIndex: null
+    }
+  }
+
+  startTest = () => {
+    this.props.onSelect(this.state.selectedIndex, 'test');
+  };
+
+  startRevise = () => {
+    this.props.onSelect(this.state.selectedIndex, 'revise');
+  };
+
+  onPickCategory = (selectedIndex) => {
+    this.setState({ selectedIndex });
+  };
+
   render() {
     const buttonList = this.props.categories.map(({name, index}) => {
       return (
         <TouchableOpacity
           style={{ height: 70 }}
-          onPress={() => this.props.onSelect(index)}
+          onPress={() => this.onPickCategory(index)}
           key={index}
         >
-          <View style={styles.finaliseButton}>
+          <View style={{
+            flex: 1,
+            backgroundColor: this.state.selectedIndex === index ? 'green' : 'steelblue',
+            justifyContent: 'center'
+          }}>
             <Text style={styles.finaliseButtonText}>{name}</Text>
           </View>
         </TouchableOpacity>
